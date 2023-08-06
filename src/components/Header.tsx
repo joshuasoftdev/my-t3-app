@@ -9,7 +9,6 @@ const Header: React.FC = () => (
       style={{ zIndex: 1 }}
     >
       <div className="flex w-full justify-between">
-        <img src="path/to/your/logo.png" alt="Logo" className="h-12 w-12" />
         <h1 className="p-3 text-5xl text-white">My T3 App</h1>
         <nav>
           <ul className="flex justify-center">
