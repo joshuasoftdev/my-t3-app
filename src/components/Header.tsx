@@ -1,5 +1,6 @@
 import React from "react";
 import HamburgerMenu from "./HamburgerMenu";
+import Link from "next/link";
 
 const Header: React.FC = () => (
   <>
@@ -7,26 +8,33 @@ const Header: React.FC = () => (
       <HamburgerMenu />
     </div>
     <header
-      className="header fixed h-20 w-full items-center text-center"
+      className="fixed h-20 w-full items-center text-center"
+      id="header"
       style={{ zIndex: 1 }}
     >
       <div className="mx-auto flex w-full flex-auto justify-between ">
         <img
           src="https://create.t3.gg/images/t3-light.svg"
           alt="Logo"
-          className="hidden h-14 w-14 pl-4 lg:block xl:block"
+          className="ml-20 hidden h-14 w-14 pl-4 pt-7 lg:block xl:block"
         />
         <div className="container mx-auto flex flex-col items-center justify-center gap-12 xl:block">
-          <h1 className="mx-auto text-5xl text-white xl:ml-44">
+          <h1 className="mx-auto pt-2 text-5xl text-white xl:ml-32">
             {" "}
             Joshua Jacobs
           </h1>
         </div>
-        <nav className="hidden lg:block xl:block">
+        <nav className="hidden pr-2 pt-2 lg:block xl:block">
           <ul className="flex justify-center">
-            <li className="p-3 text-2xl text-white">About</li>
-            <li className="p-3 text-2xl text-white">Home</li>
-            <li className="relative p-3 text-2xl text-white">Contact</li>
+            <Link href="/Home" className="p-3 text-2xl text-white">
+              Home
+            </Link>
+            <Link href="/About" className="p-3 text-2xl text-white">
+              About
+            </Link>
+            <Link href="/Contact" className="p-3 text-2xl text-white">
+              Contact
+            </Link>
           </ul>
         </nav>
       </div>

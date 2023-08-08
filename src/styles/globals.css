@@ -1,10 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.cdnfonts.com/css/dope-jam');
 
-.header {
+/* Path: src\styles\globals.css */
+#header {
     background: rgba(179, 171, 171, 0.48);
-
     backdrop-filter: blur(7.4px);
     -webkit-backdrop-filter: blur(7.4px);
     border: 1px solid rgba(179, 171, 171, 0.64);
@@ -23,7 +24,7 @@
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-    background: #373a47;
+    background: #25c6c0;
 }
 
 /* Color/shape of burger icon bars on hover*/
@@ -49,13 +50,19 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu-wrap {
     position: fixed;
     height: 100%;
+    width: 100%;
 }
 
 /* General sidebar styles */
 .bm-menu {
-    background: #373a47;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
+    background: rgba(179, 171, 171, 0.48);
+
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+    border: 1px solid rgba(179, 171, 171, 0.359);
+    box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -65,7 +72,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Wrapper for item list */
 .bm-item-list {
-    color: #b8b7ad;
+    color: #b8b7ad81;
     padding: 0.8em;
 }
 
