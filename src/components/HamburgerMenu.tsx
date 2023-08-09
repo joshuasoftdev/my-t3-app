@@ -10,7 +10,7 @@ const HamburgerMenu: React.FC = () => (
     className="right-0 h-full font-dopejam"
     width={"60%"}
   >
-    <h2 className="right-5 bg-gradient-to-r from-red-100 to-emerald-800 bg-clip-text p-4 text-5xl font-extrabold text-transparent invert">
+    <h2 className="right-5 bg-gradient-to-r from-red-100 to-emerald-800 bg-clip-text p-4 text-5xl font-extrabold text-emerald-800 text-transparent md:text-7xl">
       Menu
     </h2>
     <hr className="rounded bg-gradient-to-r from-red-100 to-emerald-800 p-1 invert" />

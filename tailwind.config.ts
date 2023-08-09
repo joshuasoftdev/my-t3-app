@@ -10,4 +10,7 @@ export default {
     },
   },
   plugins: [],
+  corePlugins: {
+    fontFamily: true,
+  },
 } satisfies Config;

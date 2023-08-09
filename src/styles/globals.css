@@ -1,7 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.cdnfonts.com/css/dope-jam');
+@import url('/public/fonts/DOPEJAM.TTF');
+
+@font-face {
+    font-family: 'Dope Jam';
+    src: url('/public/fonts/DOPEJAM.TTF') format('TTF');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* Path: src\styles\globals.css */
 #header {
