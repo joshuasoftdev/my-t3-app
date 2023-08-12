@@ -2,8 +2,6 @@ import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
 import Link from "next/link";
 import { api } from "~/utils/api";
-import { PrismaClient } from "@prisma/client";
-const prisma = new PrismaClient();
 
 function Home() {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
