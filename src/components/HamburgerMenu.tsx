@@ -1,7 +1,7 @@
 import { scaleRotate as Menu } from "react-burger-menu";
 import React from "react";
 import Link from "next/link";
-import { Squash as Hamburger } from "hamburger-react";
+import Hamburger from "hamburger-react";
 
 const HamburgerMenu: React.FC = () => (
   <Menu
