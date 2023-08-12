@@ -33,12 +33,6 @@ const HamburgerMenu: React.FC = () => (
     >
       Contact
     </Link>
-    <Link
-      className="block bg-gradient-to-r from-red-100 to-emerald-800 bg-clip-text p-4 text-5xl font-extrabold text-transparent hover:text-white hover:underline"
-      href="/Docs"
-    >
-      Docs
-    </Link>
   </Menu>
 );
 

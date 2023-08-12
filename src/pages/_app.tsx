@@ -4,6 +4,7 @@ import { type AppType } from "next/app";
 import { api } from "~/utils/api";
 import "../styles/globals.css";
 import Header from "~/components/Header";
+import Contact from "~/components/Contact";
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,

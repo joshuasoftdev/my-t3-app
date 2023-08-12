@@ -8,7 +8,7 @@ const Header: React.FC = () => (
       <HamburgerMenu />
     </div>
     <header
-      className="fixed h-20 w-full items-center text-center"
+      className="fixed h-20 w-full items-center bg-gradient-to-r from-red-100 to-emerald-800 bg-clip-text p-4 text-center text-5xl font-extrabold text-transparent md:text-7xl"
       id="header"
       style={{ zIndex: 1 }}
     >
@@ -26,7 +26,7 @@ const Header: React.FC = () => (
         </div>
         <nav className="hidden pr-2 pt-2 lg:block xl:block">
           <ul className="flex justify-center">
-            <Link href="/Home" className="p-3 text-2xl text-white">
+            <Link href="." className="p-3 text-2xl text-white">
               Home
             </Link>
             <Link href="/About" className="p-3 text-2xl text-white">
