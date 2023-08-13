@@ -1,7 +1,6 @@
 import { scaleRotate as Menu } from "react-burger-menu";
 import React from "react";
 import Link from "next/link";
-import Hamburger from "hamburger-react";
 
 const HamburgerMenu: React.FC = () => (
   <Menu
@@ -10,7 +9,6 @@ const HamburgerMenu: React.FC = () => (
     right
     className="right-0 h-full font-dopejam"
     width={"60%"}
-    customBurgerIcon={<Hamburger />}
   >
     <h2 className="right-5 bg-gradient-to-r from-red-100 to-emerald-800 bg-clip-text p-4 text-5xl font-extrabold text-emerald-800 text-transparent md:text-7xl">
       Menu

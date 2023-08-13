@@ -5,16 +5,19 @@ import { api } from "~/utils/api";
 import "../styles/globals.css";
 import Header from "~/components/Header";
 import Contact from "~/components/Contact";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
   pageProps: { session, ...pageProps },
 }) => {
   return (
-    <SessionProvider session={session}>
-      <Header />
-      <Component {...pageProps} />
-    </SessionProvider>
+    <ClerkProvider {...pageProps}>
+      <SessionProvider session={session}>
+        <Header />
+        <Component {...pageProps} />
+      </SessionProvider>
+    </ClerkProvider>
   );
 };
 
