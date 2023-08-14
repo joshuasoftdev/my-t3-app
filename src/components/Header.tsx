@@ -14,7 +14,7 @@ const Header: React.FC = () => (
     >
       <div className="mx-auto flex w-full flex-auto justify-between ">
         <img
-          src="https://create.t3.gg/images/t3-light.svg"
+          src="../Sober.png"
           alt="Logo"
           className="ml-20 hidden h-14 w-14 pl-4 pt-7 lg:block xl:block"
         />
