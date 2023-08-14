@@ -37,8 +37,9 @@ function Home() {
               {!user && <SignInButton />}
             </div>
             <div>
-              <h2 className="center items-center text-center text-2xl font-bold text-white">
-                sign out with clerk
+              <h2 className="center items-center text-center text-2xl font-bold text-emerald-500">
+                sign <span className="text-[hsl(280,100%,70%)]">out</span> with
+                clerk
               </h2>
               <div className="flex flex-col items-center justify-center gap-4 rounded bg-white">
                 {!!user && <SignOutButton />}
