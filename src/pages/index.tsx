@@ -24,23 +24,23 @@ function Home() {
           }}
         >
           <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 sm:mt-2">
-            <h1 className="text-5xl font-extrabold tracking-tight text-emerald-800 sm:text-[5rem]">
+            <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
               My <span className="text-[hsl(280,100%,70%)]">DEV</span> Portfolio
             </h1>
           </div>
           /* signin button only visible if not signed in */
           <div>
             {!user && (
-              <h2 className="center items-center text-2xl font-bold text-emerald-800">
+              <h2 className="center items-center text-2xl font-bold text-white">
                 sign in with clerk
               </h2>
             )}
-            <div className="flex flex-col items-center justify-center gap-4 rounded bg-emerald-800">
+            <div className="flex flex-col items-center justify-center gap-4 rounded bg-white">
               {!user && <SignInButton />}
             </div>
             <div>
               {!!user && (
-                <h2 className="center items-center text-center text-2xl font-bold text-emerald-800">
+                <h2 className="center items-center text-center text-2xl font-bold text-white">
                   sign out with clerk
                 </h2>
               )}
