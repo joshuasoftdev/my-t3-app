@@ -23,7 +23,7 @@ function Home() {
           }}
         >
           <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 sm:mt-2">
-            <h1 className="text-5xl font-extrabold tracking-tight text-emerald-800 sm:text-[5rem]">
+            <h1 className="text-5xl font-extrabold tracking-tight text-emerald-500 sm:text-[5rem]">
               My <span className="text-[hsl(280,100%,70%)]">DEV</span> Portfolio
             </h1>
           </div>
