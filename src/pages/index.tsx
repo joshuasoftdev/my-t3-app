@@ -27,7 +27,6 @@ function Home() {
               My <span className="text-[hsl(280,100%,70%)]">DEV</span> Portfolio
             </h1>
           </div>
-          /* signin button only visible if not signed in */
           <div>
             {!user && (
               <h2 className="center items-center text-2xl font-bold text-white">
