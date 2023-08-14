@@ -2,10 +2,11 @@ import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
 import Link from "next/link";
 import { api } from "~/utils/api";
-import { SignIn, SignInButton, SignOutButton } from "@clerk/nextjs";
+import { SignIn, SignInButton, SignOutButton, useUser } from "@clerk/nextjs";
 
 function Home() {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
+  const user = useUser;
 
   return (
     <>
@@ -19,30 +20,31 @@ function Home() {
           className="flex min-h-screen flex-auto flex-col items-center justify-center from-[#2e026d]  to-[#15162c] bg-cover bg-no-repeat"
           id="page-wrap"
           style={{
-            backgroundImage:
-              "url('https://livewallp.com/wp-content/uploads/2021/07/60FPS-Love-Money-RocknRoll-Sakura-with-music.jpg')",
+            backgroundImage: "url('../smoke-pulse.gif')",
           }}
         >
-          <div>
-            <h2 className="center items-center text-2xl font-bold text-white">
-              sign in with clerk
-            </h2>
-            <div className="flex flex-col items-center justify-center gap-4 rounded bg-white">
-              <SignInButton />
-            </div>
-            <h2 className="center items-center text-center text-2xl font-bold text-white">
-              sign out with clerk
-            </h2>
-            <div className="flex flex-col items-center justify-center gap-4 rounded bg-white">
-              <SignOutButton />
-            </div>
-          </div>
-          <SignIn path="/sign-in" routing="path" signUpUrl="/sign-up" />
           <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 sm:mt-2">
             <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
               My <span className="text-[hsl(280,100%,70%)]">DEV</span> Portfolio
             </h1>
           </div>
+          <div>
+            {!user && (
+              <h2 className="center items-center text-2xl font-bold text-white">
+                sign in with clerk
+              </h2>
+            )}
+            <div className="flex flex-col items-center justify-center gap-4 rounded bg-white">
+              {!user && <SignInButton />}
+            </div>
+            <h2 className="center items-center text-center text-2xl font-bold text-white">
+              sign out with clerk
+            </h2>
+            <div className="flex flex-col items-center justify-center gap-4 rounded bg-white">
+              {!!user && <SignOutButton />}
+            </div>
+          </div>
+          <SignIn path="/sign-in" routing="path" signUpUrl="/sign-up" />
         </main>
       </div>
     </>
