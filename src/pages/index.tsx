@@ -2,6 +2,7 @@ import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
 import Link from "next/link";
 import { api } from "~/utils/api";
+import { SignIn, SignInButton, SignOutButton } from "@clerk/nextjs";
 
 function Home() {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
@@ -15,47 +16,32 @@ function Home() {
       </Head>
       <div id="outer-container" className="relative">
         <main
-          className="flex min-h-screen flex-auto items-center justify-center from-[#2e026d]  to-[#15162c] bg-cover bg-no-repeat"
+          className="flex min-h-screen flex-auto flex-col items-center justify-center from-[#2e026d]  to-[#15162c] bg-cover bg-no-repeat"
           id="page-wrap"
           style={{
             backgroundImage:
               "url('https://livewallp.com/wp-content/uploads/2021/07/60FPS-Love-Money-RocknRoll-Sakura-with-music.jpg')",
           }}
         >
+          <div>
+            <h2 className="center items-center text-2xl font-bold text-white">
+              sign in with clerk
+            </h2>
+            <div className="flex flex-col items-center justify-center gap-4 rounded bg-white">
+              <SignInButton />
+            </div>
+            <h2 className="center items-center text-center text-2xl font-bold text-white">
+              sign out with clerk
+            </h2>
+            <div className="flex flex-col items-center justify-center gap-4 rounded bg-white">
+              <SignOutButton />
+            </div>
+          </div>
+          <SignIn path="/sign-in" routing="path" signUpUrl="/sign-up" />
           <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 sm:mt-2">
             <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
               My <span className="text-[hsl(280,100%,70%)]">DEV</span> Portfolio
             </h1>
-            <div className="glass grid grid-cols-1 gap-4 hue-rotate-180 sm:grid-cols-2 md:gap-8">
-              <Link
-                className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-cyan-400"
-                href="https://create.t3.gg/en/usage/first-steps"
-                target="_blank"
-              >
-                <h3 className="text-2xl font-bold">First Steps →</h3>
-                <div className="text-lg hue-rotate-15">
-                  Just the basics - Everything you need to know to set up your
-                  database and authentication.
-                </div>
-              </Link>
-              <Link
-                className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-cyan-400"
-                href="https://create.t3.gg/en/introduction"
-                target="_blank"
-              >
-                <h3 className="text-2xl font-bold">Documentation →</h3>
-                <div className="text-lg">
-                  Learn more about Create T3 App, the libraries it uses, and how
-                  to deploy it.
-                </div>
-              </Link>
-            </div>
-            <div className="flex flex-col items-center gap-2">
-              <p className="text-2xl text-white">
-                {hello.data ? hello.data.greeting : "Loading tRPC query..."}
-              </p>
-              <AuthShowcase />
-            </div>
           </div>
         </main>
       </div>
