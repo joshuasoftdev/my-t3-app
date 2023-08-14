@@ -13,7 +13,7 @@
 
 /* Path: src\styles\globals.css */
 #header {
-    background: rgba(179, 171, 171, 0.48);
+    background: #25c6c179;
     backdrop-filter: blur(7.4px);
     -webkit-backdrop-filter: blur(7.4px);
     border: 1px solid rgba(179, 171, 171, 0.64);
