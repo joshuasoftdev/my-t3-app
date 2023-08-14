@@ -1,6 +1,5 @@
 import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
-import Link from "next/link";
 import { api } from "~/utils/api";
 import { SignIn, SignInButton, SignOutButton, useUser } from "@clerk/nextjs";
 
@@ -39,11 +38,9 @@ function Home() {
               {!user && <SignInButton />}
             </div>
             <div>
-              {!!user && (
-                <h2 className="center items-center text-center text-2xl font-bold text-white">
-                  sign out with clerk
-                </h2>
-              )}
+              <h2 className="center items-center text-center text-2xl font-bold text-white">
+                sign out with clerk
+              </h2>
               <div className="flex flex-col items-center justify-center gap-4 rounded bg-white">
                 {!!user && <SignOutButton />}
               </div>
