@@ -17,8 +17,7 @@
     backdrop-filter: blur(7.4px);
     -webkit-backdrop-filter: blur(7.4px);
     border: 1px solid rgba(179, 171, 171, 0.64);
-    box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6), -9px -9px 16px rgba(255, 255, 255, 0.5);
-
+    box-shadow: 9px 9px 16px rgba(94, 213, 234, 0.6), -9px -9px 16px rgba(81, 224, 217, 0.5);
 }
 
 /* Position and sizing of burger button */
