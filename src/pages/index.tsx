@@ -28,12 +28,12 @@ function Home() {
             </h1>
           </div>
           <div className="info-div flex flex-grow flex-col bg-emerald-500 px-6 pt-1">
-            <h6 className="my-3 text-base font-medium">
+            <h4 className="my-3 text-base font-medium">
               I am currently pursuing B.Tech Degree(Final Year) in Computer
               Science Engineering from Academy of Technology. I have 3+ years of
               experience in Web Development and I have a Youtube Channel where I
               teach Full Stack Web Development
-            </h6>
+            </h4>
           </div>
           <div>
             {!user && (
