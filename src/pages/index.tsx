@@ -27,7 +27,7 @@ function Home() {
               My <span className="text-[hsl(280,100%,70%)]">DEV</span> Portfolio
             </h1>
           </div>
-          <div className="info-div flex h-10 flex-grow flex-col px-6 pt-1">
+          <div className="info-div flex h-4 flex-grow flex-col px-6 pt-1">
             <h4 className="my-3 text-base font-medium">
               I am a full stack developer. I love to code and I am passionate. I
               grew up in Sacramento California. I have 3+ years of experience in
