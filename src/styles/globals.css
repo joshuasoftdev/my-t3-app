@@ -92,3 +92,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
 }
+
+#info-div {
+    background: #25c6c179;
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+    border: 1px solid rgba(179, 171, 171, 0.64);
+    box-shadow: 9px 9px 16px rgba(94, 213, 234, 0.6), -9px -9px 16px rgba(81, 224, 217, 0.5);
+}
