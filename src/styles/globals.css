@@ -93,7 +93,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     background: rgba(0, 0, 0, 0.3);
 }
 
-#info-div {
+.info-div {
     background: #25c6c179;
     backdrop-filter: blur(7.4px);
     -webkit-backdrop-filter: blur(7.4px);
