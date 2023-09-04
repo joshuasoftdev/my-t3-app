@@ -27,6 +27,14 @@ function Home() {
               My <span className="text-[hsl(280,100%,70%)]">DEV</span> Portfolio
             </h1>
           </div>
+          <div className="flex flex-grow flex-col px-6 pt-1 ">
+            <h6 className="my-3 text-base font-medium">
+              I am currently pursuing B.Tech Degree(Final Year) in Computer
+              Science Engineering from Academy of Technology. I have 3+ years of
+              experience in Web Development and I have a Youtube Channel where I
+              teach Full Stack Web Development
+            </h6>
+          </div>
           <div>
             {!user && (
               <h2 className="center items-center text-2xl font-bold text-white">

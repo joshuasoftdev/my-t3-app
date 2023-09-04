@@ -12,7 +12,7 @@
   "dependencies": {
     "@clerk/nextjs": "^4.23.2",
     "@next-auth/prisma-adapter": "^1.0.5",
-    "@prisma/client": "^5.1.1",
+    "@prisma/client": "^5.2.0",
     "@t3-oss/env-nextjs": "^0.3.1",
     "@tanstack/react-query": "^4.29.7",
     "@thirdweb-dev/react": "^3.14.27",
@@ -54,7 +54,7 @@
     "postcss": "^8.4.21",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.2.8",
-    "prisma": "^5.1.1",
+    "prisma": "^5.2.0",
     "tailwindcss": "^3.3.0",
     "typescript": "^5.0.4"
   },

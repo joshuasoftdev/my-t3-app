@@ -16,7 +16,7 @@ const Header: React.FC = () => (
         <img
           src="../Sober.png"
           alt="Logo"
-          className="sober ml-20 hidden h-20 w-32 pb-4 lg:block xl:block"
+          className="sober ml-20 hidden h-24 w-32 pb-4 lg:block xl:block"
         />
         <div className="container mx-auto flex flex-col items-center justify-center gap-12 xl:block">
           <h1 className="mx-auto pt-2 text-5xl text-white xl:ml-32">
