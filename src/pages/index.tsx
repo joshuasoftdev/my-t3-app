@@ -1,3 +1,5 @@
+import React from "react";
+import { useState } from "react";
 import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
 import { api } from "~/utils/api";
@@ -8,6 +10,10 @@ import Marquee from "react-fast-marquee";
 function Home() {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
   const user = useUser;
+  const [name, setName] = useState("Ihechikara");
+  const changeName = () => {
+    setName("Joshua");
+  };
 
   return (
     <>
@@ -26,8 +32,11 @@ function Home() {
         >
           <Marquee>
             <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 sm:mt-2">
-              <h1 className="text-5xl font-extrabold tracking-tight text-emerald-500 sm:text-[5rem]">
-                My <span className="text-[hsl(280,100%,70%)]">DEV</span>{" "}
+              <h1
+                className="text-5xl font-extrabold tracking-tight text-emerald-500 sm:text-[5rem]"
+                onClick={changeName}
+              >
+                {name} <span className="text-[hsl(280,100%,70%)]">DEV</span>{" "}
                 Portfolio
               </h1>
             </div>
