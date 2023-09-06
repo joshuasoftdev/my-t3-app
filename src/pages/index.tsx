@@ -10,9 +10,9 @@ import Marquee from "react-fast-marquee";
 function Home() {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
   const user = useUser;
-  const [name, setName] = useState("Ihechikara");
+  const [name, setName] = useState("Joshuas");
   const changeName = () => {
-    setName("Joshua");
+    setName("amazing");
   };
 
   return (
