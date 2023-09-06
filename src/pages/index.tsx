@@ -3,6 +3,7 @@ import Head from "next/head";
 import { api } from "~/utils/api";
 import { SignIn, SignInButton, SignOutButton, useUser } from "@clerk/nextjs";
 import { FaGithub, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import Marquee from "react-fast-marquee";
 
 function Home() {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
@@ -23,11 +24,14 @@ function Home() {
             backgroundImage: "url('../smoke-pulse.gif')",
           }}
         >
-          <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 sm:mt-2">
-            <h1 className="text-5xl font-extrabold tracking-tight text-emerald-500 sm:text-[5rem]">
-              My <span className="text-[hsl(280,100%,70%)]">DEV</span> Portfolio
-            </h1>
-          </div>
+          <Marquee>
+            <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 sm:mt-2">
+              <h1 className="text-5xl font-extrabold tracking-tight text-emerald-500 sm:text-[5rem]">
+                My <span className="text-[hsl(280,100%,70%)]">DEV</span>{" "}
+                Portfolio
+              </h1>
+            </div>
+          </Marquee>
           <div className="info-div flex h-4 flex-grow flex-col px-6 pt-1">
             <h4 className="my-3 text-base font-medium">
               I am a full stack developer. I love to code and I am passionate. I
