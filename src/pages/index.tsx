@@ -4,13 +4,13 @@ import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
 import { api } from "~/utils/api";
 import { SignIn, SignInButton, SignOutButton, useUser } from "@clerk/nextjs";
-import { FaGithub, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
+// import { FaGithub, FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 
 function Home() {
   const hello = api.example.hello.useQuery({ text: "from tRPC" });
   const user = useUser;
-  const [name, setName] = useState("Joshuas");
+  const [name, setName] = useState("Joshua Jacobs");
   const changeName = () => {
     setName("amazing");
   };
@@ -43,10 +43,10 @@ function Home() {
           </Marquee>
           <div className="info-div flex h-4 flex-grow flex-col px-6 pt-1">
             <h4 className="my-3 text-base font-medium">
-              I am a full stack developer. I love to code and I am passionate. I
-              grew up in Sacramento California. I have 3+ years of experience in
-              Web Development and I have a Youtube Channel where I teach Full
-              Stack Web Development
+              Hi my name is {name}; I am a full stack developer. I love to code
+              and I am passionate. I grew up in Sacramento California. I have 3+
+              years of experience in Web Development and I have a Youtube
+              Channel where I teach Full Stack Web Development
             </h4>
           </div>
           <div>
@@ -69,40 +69,6 @@ function Home() {
             </div>
           </div>
           <SignIn path="/sign-in" routing="path" signUpUrl="/sign-up" />
-          <div className="mx-auto flex flex-row items-center justify-center space-y-4">
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn"
-            >
-              <FaGithub className="h-6 w-6" />
-            </a>
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn"
-            >
-              <FaFacebook className="h-6 w-6" />
-            </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn"
-            >
-              <FaInstagram className="h-6 w-6" />
-            </a>
-            <a
-              href="https://youtube.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn"
-            >
-              <FaYoutube className="h-6 w-6" />
-            </a>
-          </div>
         </main>
       </div>
     </>
