@@ -40,7 +40,7 @@ const Header: React.FC = () => (
               fontWeight: "normal",
             }}
           >
-            Life is simple{" "}
+            {" "}
             <span style={{ color: "red", fontWeight: "bold" }}>
               {/* Style will be inherited from the parent element */}
               <Typewriter
