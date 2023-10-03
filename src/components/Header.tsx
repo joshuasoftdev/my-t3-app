@@ -33,6 +33,7 @@ const Header: React.FC = () => (
             Joshua Jacobs
           </h1>
           <h1
+            className="mx-auto pt-2 text-5xl text-white xl:ml-32"
             style={{
               paddingTop: "5rem",
               margin: "auto 0",
@@ -43,13 +44,13 @@ const Header: React.FC = () => (
             <span style={{ color: "red", fontWeight: "bold" }}>
               {/* Style will be inherited from the parent element */}
               <Typewriter
-                words={["Eat", "Sleep", "Code", "Repeat!"]}
+                words={["Joshua Jacobs", "Developer", "profile!"]}
                 loop={5}
                 cursor
                 cursorStyle="_"
                 typeSpeed={70}
                 deleteSpeed={50}
-                delaySpeed={1000}
+                delaySpeed={5000}
                 onLoopDone={handleDone}
                 onType={handleType}
               />
