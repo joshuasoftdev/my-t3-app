@@ -3,6 +3,14 @@ import HamburgerMenu from "./HamburgerMenu";
 import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
 
+const handleDone = () => {
+  console.log("Loop Done");
+};
+
+const handleType = () => {
+  console.log("Typing");
+};
+
 const Header: React.FC = () => (
   <>
     <div className="lg:hidden xl:hidden">
