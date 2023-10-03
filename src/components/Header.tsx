@@ -44,7 +44,7 @@ const Header: React.FC = () => (
             <span style={{ color: "red", fontWeight: "bold" }}>
               {/* Style will be inherited from the parent element */}
               <Typewriter
-                words={["Joshua Jacobs", "Developer", "profile!"]}
+                words={["Joshua Jacobs", "Developer", "Profile!"]}
                 loop={5}
                 cursor
                 cursorStyle="_"
