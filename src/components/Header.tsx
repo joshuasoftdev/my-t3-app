@@ -1,6 +1,7 @@
 import React from "react";
 import HamburgerMenu from "./HamburgerMenu";
 import Link from "next/link";
+import { Typewriter } from "react-simple-typewriter";
 
 const Header: React.FC = () => (
   <>
@@ -22,6 +23,29 @@ const Header: React.FC = () => (
           <h1 className="mx-auto pt-2 text-5xl text-white xl:ml-32">
             {" "}
             Joshua Jacobs
+          </h1>
+          <h1
+            style={{
+              paddingTop: "5rem",
+              margin: "auto 0",
+              fontWeight: "normal",
+            }}
+          >
+            Life is simple{" "}
+            <span style={{ color: "red", fontWeight: "bold" }}>
+              {/* Style will be inherited from the parent element */}
+              <Typewriter
+                words={["Eat", "Sleep", "Code", "Repeat!"]}
+                loop={5}
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+                onLoopDone={handleDone}
+                onType={handleType}
+              />
+            </span>
           </h1>
         </div>
         <nav className="hidden pr-2 pt-2 lg:block xl:block">
