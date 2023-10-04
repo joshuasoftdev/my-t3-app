@@ -22,13 +22,11 @@ const Header: React.FC = () => (
       style={{ zIndex: 1 }}
     >
       <div className="mx-auto flex w-full flex-auto justify-between ">
-        <div className="flex flex-row items-center justify-center gap-4">
-          <img
-            src="../Sober.png"
-            alt="Logo"
-            className="sober ml-20 hidden h-20 w-32 pb-4 lg:block xl:block"
-          />
-        </div>
+        <img
+          src="../Sober.png"
+          alt="Logo"
+          className="sober ml-20 hidden h-20 w-32 pb-4 lg:block xl:block"
+        />
         <div
           className="container mx-auto flex flex-col items-center justify-center gap-12 xl:block"
           style={{
