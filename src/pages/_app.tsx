@@ -5,11 +5,6 @@ import { api } from "~/utils/api";
 import "../styles/globals.css";
 import Header from "~/components/Header";
 import { ClerkProvider } from "@clerk/nextjs";
-import { SignIn, SignInButton, SignOutButton, useUser } from "@clerk/nextjs";
-import { useState } from "react";
-import user from "~/components/Header";
-
-const [name, setName] = useState("Joshua Jacobs");
 
 const MyApp: AppType<{ session: Session | null }> = ({
   Component,
