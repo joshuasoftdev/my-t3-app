@@ -27,7 +27,15 @@ const Header: React.FC = () => (
           alt="Logo"
           className="sober ml-20 hidden h-20 w-32 pb-4 lg:block xl:block"
         />
-        <div className="mx-auto pt-2 text-5xl text-white xl:ml-32">
+        <div
+          className="container mx-auto flex flex-col items-center justify-center gap-12 xl:block"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            height: "100vh", // This can be adjusted based on your needs
+          }}
+        >
           <h1
             className="mx-auto pt-2 text-5xl text-white xl:ml-32"
             style={{
@@ -53,6 +61,7 @@ const Header: React.FC = () => (
             </span>
           </h1>
         </div>
+
         <nav className="hidden pr-2 pt-2 lg:block xl:block">
           <ul className="flex justify-center">
             <Link href="." className="p-3 text-2xl text-white">
