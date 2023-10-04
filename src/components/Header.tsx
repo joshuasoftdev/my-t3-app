@@ -1,9 +1,7 @@
 import React from "react";
 import HamburgerMenu from "./HamburgerMenu";
-import { useState } from "react";
 import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
-import { useUser } from "@clerk/nextjs";
 
 const handleDone = () => {
   console.log("Loop Done");
@@ -12,9 +10,6 @@ const handleDone = () => {
 const handleType = () => {
   console.log("Typing");
 };
-
-const user = useUser;
-const [name, setName] = useState("Joshua Jacobs");
 
 const Header: React.FC = () => (
   <>
