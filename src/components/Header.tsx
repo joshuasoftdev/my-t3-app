@@ -1,7 +1,9 @@
 import React from "react";
 import HamburgerMenu from "./HamburgerMenu";
+import { useState } from "react";
 import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
+import { useUser } from "@clerk/nextjs";
 
 const handleDone = () => {
   console.log("Loop Done");
@@ -10,6 +12,9 @@ const handleDone = () => {
 const handleType = () => {
   console.log("Typing");
 };
+
+const user = useUser;
+const [name, setName] = useState("Joshua Jacobs");
 
 const Header: React.FC = () => (
   <>
@@ -28,10 +33,6 @@ const Header: React.FC = () => (
           className="sober ml-20 hidden h-20 w-32 pb-4 lg:block xl:block"
         />
         <div className="container mx-auto flex flex-col items-center justify-center gap-12 xl:block">
-          <h1 className="mx-auto pt-2 text-5xl text-white xl:ml-32">
-            {" "}
-            Joshua Jacobs
-          </h1>
           <h1
             className="mx-auto pt-2 text-5xl text-white xl:ml-32"
             style={{
